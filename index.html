@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header page breadcrumb title section -->
+    <div class="header-page-title-breadcrumb-wrrapper">
+      <div class="container w-[1400px] m-auto">
+        <div
+          class="header-page-breadcrumb-title-box flex flex-col gap-6 items-center justify-center"
+        >
+          <div class="header-breadcrumb-title">
+            <h3 class="text-3xl font-bold">Shopping Cart</h3>
+          </div>
+          <div class="breadcrumb-wrraper-box flex items-center justify-center gap-2">
+            <a href="/">Home</a>
+            <span 
+              ><svg
+                class="m-svg-icon--small w-2"
+                fill="currentColor"
+                stroke="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 512"
+              >
+                <path
+                  d="M17.525 36.465l-7.071 7.07c-4.686 4.686-4.686 12.284 0 16.971L205.947 256 10.454 451.494c-4.686 4.686-4.686 12.284 0 16.971l7.071 7.07c4.686 4.686 12.284 4.686 16.97 0l211.051-211.05c4.686-4.686 4.686-12.284 0-16.971L34.495 36.465c-4.686-4.687-12.284-4.687-16.97 0z"
+                ></path>
+              </svg>
+            </span>
+            <span>Your Shopping Cart</span>
+          </div>
+        </div>
+        <!-- start cart form body -->
+        <form action="/cart">
+            <div class="shopping-cart-wrrapper">
+                <div class="shopping-cart-header flex justify-between items-center">
+                    <div class="shopping-cart-product-title text-medium font-medium basis-[25%]">
+                        <span>Product</span>
+                    </div>
+                    <div class="shopping-cart-product-price text-medium font-medium basis-[20%]">
+                        <span>Price</span>
+                    </div>
+                    <div class="shopping-cart-product-Quantity text-medium font-medium basis-[20%]">
+                        <span>Quantity</span>
+                    </div>
+                    <div class="shopping-cart-product-total-price text-medium font-medium basis-[20%]">
+                        <span>$500</span>
+                    </div>
+                </div>
+                <div class="shopping-cart-body-wrrapper flex items-center justify-between">
+
+
+                    <!-- shopping-cart-product-title-img-box -->
+                    <div class="shopping-cart-product-title-img-box flex items-center gap-4 basis-[25%]">
+                        <img src="https://cozycoutureclothing.myshopify.com/cdn/shop/files/b109f0ba-fee5-43cb-9ded-5f18e4cc8d49.jpg?v=1710737432&width=165" alt="product image">
+                        <div class="shopping-cart-product-info">
+                            <p class="shopping-cart-product-info-title">This is paragraph. This is paragraph.</p>
+                            <p class="shopping-cart-product-info-color">Red, Black</p>
+                            <p class="shopping-cart-product-info-size">Size</p>
+                            <button>Remove</button>
+                        </div>
+                    </div>
+                    <!-- end shopping-cart-product-title-img-box -->
+
+                    <!-- shopping-cart-product-price -->
+                    <div class="shopping-cart-product-price basis-[20%]">
+                        <p>
+                             <span>$</span>
+                            <span>500</span>
+                        </p>
+                    </div>
+                    <!-- end shopping-cart-product-price -->
+                    
+                    <div class="shopping-cart-product-quantity basis-[20%]">
+                        <p>
+                            <button class="shopping-cart-product-minus-btn">
+                                -
+                            </button>
+                            <input class="input border" type="text">
+                            <button class="shopping-cart-product-plus-btn">
+                                +
+                            </button>
+                        </p>
+                    </div>
+
+                    <!-- end shopping-cart-product-quantity -->
+
+                    <div class="shopping-cart-product-total-price basis-[20%]">
+                        <p>
+                            <span>$</span>
+                            <span>500</span>
+                        </p>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </form>
+      </div>
+      <!-- end container -->
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
