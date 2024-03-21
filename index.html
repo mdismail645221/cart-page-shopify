@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+
+  <style>
+    .shopping-cart-product-quantity input {
+      width: 50px;
+      border: none;
+    }
+
+    .shopping-cart-product-quantity p {
+      width: 100px;
+      border: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      border-radius: 50px;
+      box-shadow: 1px 1px 1px 0px #eee;
+    }
+    button.shopping-cart-product-plus-btn,
+    button.shopping-cart-product-minus-btn {
+      font-size: 16px;
+      font-weight: 700;
+    }
+  </style>
+
   <body>
     <!-- header page breadcrumb title section -->
     <div class="header-page-title-breadcrumb-wrrapper">
@@ -15,9 +38,11 @@
           <div class="header-breadcrumb-title">
             <h3 class="text-3xl font-bold">Shopping Cart</h3>
           </div>
-          <div class="breadcrumb-wrraper-box flex items-center justify-center gap-2">
+          <div
+            class="breadcrumb-wrraper-box flex items-center justify-center gap-2"
+          >
             <a href="/">Home</a>
-            <span 
+            <span
               ><svg
                 class="m-svg-icon--small w-2"
                 fill="currentColor"
@@ -35,70 +60,78 @@
         </div>
         <!-- start cart form body -->
         <form action="/cart">
-            <div class="shopping-cart-wrrapper">
-                <div class="shopping-cart-header flex justify-between items-center">
-                    <div class="shopping-cart-product-title text-medium font-medium basis-[25%]">
-                        <span>Product</span>
-                    </div>
-                    <div class="shopping-cart-product-price text-medium font-medium basis-[20%]">
-                        <span>Price</span>
-                    </div>
-                    <div class="shopping-cart-product-Quantity text-medium font-medium basis-[20%]">
-                        <span>Quantity</span>
-                    </div>
-                    <div class="shopping-cart-product-total-price text-medium font-medium basis-[20%]">
-                        <span>$500</span>
-                    </div>
-                </div>
-                <div class="shopping-cart-body-wrrapper flex items-center justify-between">
-
-
-                    <!-- shopping-cart-product-title-img-box -->
-                    <div class="shopping-cart-product-title-img-box flex items-center gap-4 basis-[25%]">
-                        <img src="https://cozycoutureclothing.myshopify.com/cdn/shop/files/b109f0ba-fee5-43cb-9ded-5f18e4cc8d49.jpg?v=1710737432&width=165" alt="product image">
-                        <div class="shopping-cart-product-info">
-                            <p class="shopping-cart-product-info-title">This is paragraph. This is paragraph.</p>
-                            <p class="shopping-cart-product-info-color">Red, Black</p>
-                            <p class="shopping-cart-product-info-size">Size</p>
-                            <button>Remove</button>
-                        </div>
-                    </div>
-                    <!-- end shopping-cart-product-title-img-box -->
-
-                    <!-- shopping-cart-product-price -->
-                    <div class="shopping-cart-product-price basis-[20%]">
-                        <p>
-                             <span>$</span>
-                            <span>500</span>
-                        </p>
-                    </div>
-                    <!-- end shopping-cart-product-price -->
-                    
-                    <div class="shopping-cart-product-quantity basis-[20%]">
-                        <p>
-                            <button class="shopping-cart-product-minus-btn">
-                                -
-                            </button>
-                            <input class="input border" type="text">
-                            <button class="shopping-cart-product-plus-btn">
-                                +
-                            </button>
-                        </p>
-                    </div>
-
-                    <!-- end shopping-cart-product-quantity -->
-
-                    <div class="shopping-cart-product-total-price basis-[20%]">
-                        <p>
-                            <span>$</span>
-                            <span>500</span>
-                        </p>
-                    </div>
-
-
-
-                </div>
+          <div class="shopping-cart-wrrapper">
+            <div class="shopping-cart-header flex justify-between items-center">
+              <div
+                class="shopping-cart-product-title text-medium font-medium basis-[25%]"
+              >
+                <span>Product</span>
+              </div>
+              <div
+                class="shopping-cart-product-price text-medium font-medium basis-[20%]"
+              >
+                <span>Price</span>
+              </div>
+              <div
+                class="shopping-cart-product-Quantity text-medium font-medium basis-[20%]"
+              >
+                <span>Quantity</span>
+              </div>
+              <div
+                class="shopping-cart-product-total-price text-medium font-medium basis-[20%]"
+              >
+                <span>$500</span>
+              </div>
             </div>
+            <div
+              class="shopping-cart-body-wrrapper flex items-center justify-between"
+            >
+              <!-- shopping-cart-product-title-img-box -->
+              <div
+                class="shopping-cart-product-title-img-box flex items-center gap-4 basis-[25%]"
+              >
+                <img
+                  src="https://cozycoutureclothing.myshopify.com/cdn/shop/files/b109f0ba-fee5-43cb-9ded-5f18e4cc8d49.jpg?v=1710737432&width=165"
+                  alt="product image"
+                />
+                <div class="shopping-cart-product-info">
+                  <p class="shopping-cart-product-info-title">
+                    This is paragraph. This is paragraph.
+                  </p>
+                  <p class="shopping-cart-product-info-color">Red, Black</p>
+                  <p class="shopping-cart-product-info-size">Size</p>
+                  <button>Remove</button>
+                </div>
+              </div>
+              <!-- end shopping-cart-product-title-img-box -->
+
+              <!-- shopping-cart-product-price -->
+              <div class="shopping-cart-product-price basis-[20%]">
+                <p>
+                  <span>$</span>
+                  <span>500</span>
+                </p>
+              </div>
+              <!-- end shopping-cart-product-price -->
+
+              <div class="shopping-cart-product-quantity basis-[20%]">
+                <p>
+                  <button  class="shopping-cart-product-minus-btn">-</button>
+                  <input value="0" class="input border text-center" type="text" />
+                  <button class="shopping-cart-product-plus-btn">+</button>
+                </p>
+              </div>
+
+              <!-- end shopping-cart-product-quantity -->
+
+              <div class="shopping-cart-product-total-price basis-[20%]">
+                <p>
+                  <span>$</span>
+                  <span>500</span>
+                </p>
+              </div>
+            </div>
+          </div>
         </form>
       </div>
       <!-- end container -->
